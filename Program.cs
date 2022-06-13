@@ -1,4 +1,5 @@
-﻿namespace Questions
+﻿using System;
+namespace Questions
 {
     class Program
     {
@@ -60,24 +61,24 @@
                 string ? answer = Console.ReadLine();
                 if (answer == "yes" || answer == "Yes")
                 {
-                    Console.WriteLine($"Question: {questionsCount}", questions[0]);
+                    Console.WriteLine($"Question: {questionsCount}, {questions[0]}");
                     questionsCount++;
 
                     string ? answer1 = Console.ReadLine();
                     if (answer1 == "yes" || answer1 == "Yes")
                     {
-                        Console.WriteLine($"Question: {questionsCount}", questions[2]);
+                        Console.WriteLine($"Question: {questionsCount}, {questions[2]}");
                         questionsCount++;
                         string ? answer2 = Console.ReadLine();
                         if (answer2 == "yes" || answer2 == "Yes")
                         {
-                            Console.WriteLine($"Question: {questionsCount}", questions[3]);
+                            Console.WriteLine($"Question: {questionsCount}, {questions[3]}");
                             questionsCount++;
                             string ? answer3 = Console.ReadLine();
                         }
                         else if(answer2 == "no" || answer2 == "No")
                         {
-                            Console.WriteLine($"Question: {questionsCount}", questions[4]);
+                            Console.WriteLine($"Question: {questionsCount}, {questions[4]}");
                             questionsCount++;
                             string ? answer4 = Console.ReadLine();
                         }
@@ -89,7 +90,7 @@
                     }
                     else if (answer1 == "no" || answer1 == "No")
                     {
-                        Console.WriteLine($"Question: {questionsCount}", questions[1]);
+                        Console.WriteLine($"Question: {questionsCount}, {questions[1]}");
                         string ? answer2 = Console.ReadLine();
                         questionsCount++;
                     }
